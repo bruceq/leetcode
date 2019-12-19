@@ -14,6 +14,17 @@ public class Main {
         }
     }
 
+    /**
+     * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+     * You may assume that each input would have exactly one solution, and you may not use the same element twice.
+     * <p>
+     * Time:O(n)
+     * Space:O(n)
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
