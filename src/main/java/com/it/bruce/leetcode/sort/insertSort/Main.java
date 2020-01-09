@@ -1,4 +1,4 @@
-package com.it.bruce.leetcode.insertSort;
+package com.it.bruce.leetcode.sort.insertSort;
 
 import java.util.Arrays;
 

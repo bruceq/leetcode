@@ -1,4 +1,4 @@
-package com.it.bruce.leetcode.bubbleSort;
+package com.it.bruce.leetcode.sort.bubbleSort;
 
 import java.util.Arrays;
 

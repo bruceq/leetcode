@@ -1,4 +1,4 @@
-package com.it.bruce.leetcode.mergeSort;
+package com.it.bruce.leetcode.sort.mergeSort;
 
 import java.util.Arrays;
 

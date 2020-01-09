@@ -1,4 +1,4 @@
-package com.it.bruce.leetcode.quickSort;
+package com.it.bruce.leetcode.sort.quickSort;
 
 public class Main {
     public static void main(String[] args) {
