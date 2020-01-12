@@ -13,6 +13,12 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 
+    /**
+     * 常见冒泡排序
+     *
+     * @param arr
+     * 
+     */
     private static void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
@@ -25,6 +31,11 @@ public class Main {
         }
     }
 
+    /**
+     * 冒泡排序优化
+     *
+     * @param arr
+     */
     private static void bubbleSortII(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = arr.length - 1; j > i; j--) {
