@@ -7,24 +7,15 @@ import org.springframework.stereotype.Component;
 public class ScheduleTest {
     private int i = 0;
 
-    @Scheduled(fixedRate = 60 * 2 * 1000)
+    @Scheduled(fixedRate = 60 * 1 * 1500)
     void schedule() {
         String[] url = {
-                "https://blog.csdn.net/qixinbruce/article/details/103706963",
-                "https://blog.csdn.net/qixinbruce/article/details/103838496",
-                "https://blog.csdn.net/qixinbruce/article/details/103850097",
-                "https://blog.csdn.net/qixinbruce/article/details/103850092",
-                "https://blog.csdn.net/qixinbruce/article/details/103883685",
-                "https://blog.csdn.net/qixinbruce/article/details/103899611",
-                "https://blog.csdn.net/qixinbruce/article/details/103917398",
-                "https://blog.csdn.net/qixinbruce/article/details/103947579",
-                "https://blog.csdn.net/qixinbruce/article/details/103944402",
-                "https://blog.csdn.net/qixinbruce/article/details/104010678",
-                "https://blog.csdn.net/qixinbruce/article/details/103624754",
-                "https://blog.csdn.net/qixinbruce/article/details/104047344"
+                "https://blog.csdn.net/qixinbruce/article/details/104056939",
+                "https://blog.csdn.net/qixinbruce/article/details/104047344",
+                "https://blog.csdn.net/qixinbruce/article/details/104010678"
         };
         for (String r : url) {
-            if (i == 6000) {
+            if (i == 3000) {
                 break;
             }
             HttpUtils.doGet(r);
