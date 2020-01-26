@@ -11,3 +11,4 @@ public class LeetcodeApplication {
         SpringApplication.run(LeetcodeApplication.class, args);
     }
 }
+

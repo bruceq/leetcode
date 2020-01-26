@@ -10,9 +10,11 @@ public class ScheduleTest {
     @Scheduled(fixedRate = 60 * 1 * 1500)
     void schedule() {
         String[] url = {
-                "https://blog.csdn.net/qixinbruce/article/details/104056939",
+                "https://blog.csdn.net/qixinbruce/article/details/104076338",
                 "https://blog.csdn.net/qixinbruce/article/details/104047344",
-                "https://blog.csdn.net/qixinbruce/article/details/104010678"
+                "https://blog.csdn.net/qixinbruce/article/details/104010678",
+                "https://blog.csdn.net/qixinbruce/article/details/104067397",
+                "https://blog.csdn.net/qixinbruce/article/details/104066547"
         };
         for (String r : url) {
             if (i == 3000) {
