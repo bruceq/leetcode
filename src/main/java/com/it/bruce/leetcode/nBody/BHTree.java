@@ -2,16 +2,14 @@ package com.it.bruce.leetcode.nBody;
 
 /**
  * BHTree.java
- *
+ * <p>
  * Represents a quadtree for the Barnes-Hut algorithm.
- *
+ * <p>
  * Dependencies: Body.java Quad.java
  *
  * @author chindesaurus
  * @version 1.00
  */
-
-import java.awt.Color;
 
 public class BHTree {
 
@@ -54,7 +52,7 @@ public class BHTree {
         }
 
         // internal node
-        if (! isExternal()) {
+        if (!isExternal()) {
             // update the center-of-mass and total mass
             body = body.plus(b);
 

@@ -16,18 +16,15 @@ package com.it.bruce.leetcode.nBody;
  */
 
 import java.awt.Color;
-import java.util.Scanner;
 
 public class NBodyBH {
 
     public static void main(String[] args) {
 
-        // for reading from stdin
-        Scanner console = new Scanner(System.in);
 
         final double dt = 0.1;                     // time quantum
-        int N = console.nextInt();                 // number of particles
-        double radius = console.nextDouble();      // radius of universe
+        int N = 10000;                 // number of particles
+        double radius = 1000;      // radius of universe
 
         // turn on animation mode and rescale coordinate system
         StdDraw.show(0);
@@ -37,16 +34,10 @@ public class NBodyBH {
         // read in and initialize bodies
         Body[] bodies = new Body[N];               // array of N bodies
         for (int i = 0; i < N; i++) {
-            double px = console.nextDouble();
-            double py = console.nextDouble();
-            double vx = console.nextDouble();
-            double vy = console.nextDouble();
-            double mass = console.nextDouble();
-            int red = console.nextInt();
-            int green = console.nextInt();
-            int blue = console.nextInt();
-            Color color = new Color(red, green, blue);
-            bodies[i] = new Body(px, py, vx, vy, mass, color);
+            double px = radius * 0.5 * (Math.random() - 1);
+            double py = radius * 0.5 * (Math.random() - 1);
+            Color color = new Color(225, 225, 0);
+            bodies[i] = new Body(px, py, 2, 2, 1, color);
         }
 
 
