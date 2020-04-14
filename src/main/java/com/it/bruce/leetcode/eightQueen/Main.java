@@ -1,25 +1,35 @@
 package com.it.bruce.leetcode.eightQueen;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     private static int count = 0;    //记录成功的第几种可能
-    private static int N = 8;    //几皇后
+    private static int N = 4;    //几皇后
+    private static List<List<String>> list = new ArrayList<>();
 
     public static void main(String[] args) {
         int[][] arr = new int[N][N];    //默认元素为0 1当皇后
         eightQueen(0, arr);    //打印八皇后所有可能的解 并且从第一行开始 0
+        String a = ";";
     }
 
     //row [0,7]
     private static void eightQueen(int row, int[][] arr) {
+        List<String> tempList = new ArrayList<>();
         if (row == N) {    //row可以到达8 也就意味着前0~7行 每行都放有皇后
             count++;
             System.out.println("第" + count + "种：");
             for (int i = 0; i < arr.length; i++) {    //循环输出二维数组
+                String s = "";
                 for (int j = 0; j < arr[i].length; j++) {
+                    s += arr[i][j];
                     System.out.print(arr[i][j] + " ");
                 }
+                tempList.add(s);
                 System.out.println();
             }
+            list.add(tempList);
         } else {    //如果没有完成八皇后 复制一个副本 对其副本进行改变
             //做一个数组备份
             int[][] newArr = new int[N][N];
