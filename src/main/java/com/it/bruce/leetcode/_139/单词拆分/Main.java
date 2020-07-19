@@ -5,12 +5,21 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         List<String> wordDict = new ArrayList<>();
-        wordDict.add("cats");
-        wordDict.add("dog");
-        wordDict.add("sand");
-        wordDict.add("and");
-        wordDict.add("cat");
-        System.out.println(wordBreak("catsanddog", wordDict));
+//        wordDict.add("cats");
+//        wordDict.add("dog");
+//        wordDict.add("sand");
+//        wordDict.add("and");
+//        wordDict.add("cat");
+        wordDict.add("a");
+        wordDict.add("aa");
+        wordDict.add("aaa");
+        wordDict.add("aaaa");
+        wordDict.add("aaaaa");
+        wordDict.add("aaaaaa");
+        wordDict.add("aaaaaaa");
+        wordDict.add("aaaaaaaa");
+        wordDict.add("aaaaaaaaa");
+//        System.out.println(wordBreak("catsandog", wordDict));
 
 //        List<String> wordDict = new ArrayList<>();
 //        wordDict.add("leet");
@@ -21,6 +30,8 @@ public class Main {
 //        wordDict.add("apple");
 //        wordDict.add("pen");
 //        wordBreak("applepenapple", wordDict);
+        System.out.println(wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", wordDict));
+
     }
 
     public static boolean wordBreak(String s, List<String> wordDict) {
